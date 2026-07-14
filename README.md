@@ -1,24 +1,35 @@
-# Drason McEwan
+Hi, I'm Drason McEwan.
 
-**Multi-agent AI systems · Conversational AI & LLM engineering · Financial-services automation**
+AI Systems Engineer focused on verification-first AI, multi-agent systems, and conversational AI.
 
-Tampa, FL · Open to remote · [linkedin.com/in/drason-mcewan](https://www.linkedin.com/in/drason-mcewan) · dsmcewan@gmail.com
+I build production AI systems that combine multi-agent orchestration, deterministic validation, and evidence synthesis to improve reliability. My work explores how probabilistic models can be governed through independent verification, auditable decision paths, and structured consensus instead of confidence alone.
 
-I build multi-agent LLM systems where **accuracy is enforced by architecture, not hoped for** — validation layers held separate from generation, cross-model consensus checks, and deterministic rules that bound what a model is allowed to decide. Before that: a decade at Citigroup turning fragile manual operations in tax reporting and compliance into deterministic Python/SQL pipelines (66% overtime reduction, full-day processes cut to 8-minute runs).
+Featured Projects
 
-## Featured work
+⚒️ TELOS
 
-| Project | What it is | Why it's interesting |
-|---|---|---|
-| **[LEXI](https://github.com/dsmcewan/LEXI)** | Multi-agent forensic NLP platform ([live demo](https://dsmcewan.github.io/LEXI/)) | Orchestrates four LLMs through complexity-routing; bias-validation layer architecturally separate from generation; cross-model consensus surfaces disagreement before anything becomes a finding |
-| **[Convergence](https://github.com/dsmcewan/Convergence)** | Corroboration-first communication-forensics engine | Findings elevate only when independent analytical layers agree — the LLM never decides the verdict on its own. Deterministic, auditable, stdlib-only Python, 191 tests |
-| **[TELOS](https://github.com/dsmcewan/TELOS)** | Multi-model build-orchestration gate | Code changes gated behind multi-model review and an Ed25519-signed Merkle DAG ledger; it has gated and rejected its own upgrade when live approvals were missing |
-| **[CrossroadThreads](https://github.com/dsmcewan/CrossroadThreads)** | Next.js static-export gallery | 103-exhibit dynamic catalog, sharp image pipeline, locally-synthesized TTS audio tour |
+Verification-first orchestration framework that gates AI-generated code through multi-model review and cryptographically verifiable approval.
 
-## How I think about LLM systems
+🧠 LEXI
 
-- **Validation separate from generation** — the agent that produces an answer never grades its own work.
-- **Consensus over confidence** — inter-model disagreement is a signal to surface, not noise to average away.
-- **Deterministic where it matters** — models propose; auditable rules decide.
+Production multi-agent conversational AI for long-horizon evidence synthesis and complex communication analysis.
 
-`Python` `SQL` `React` `FastAPI` `Multi-agent orchestration` `RAG / GraphRAG` `MCP` `Knowledge graphs`
+🔀 Convergence
+
+Evidence synthesis engine that corroborates findings across independent analytical layers before presenting conclusions.
+
+Engineering Principles
+
+- Evidence before confidence.
+- Verification before generation.
+- Plans before agents.
+- Deterministic systems over prompt-only workflows.
+- Trust is earned through independent validation.
+
+Background
+
+Before focusing on AI systems, I spent a decade at Citigroup Markets designing automation, operational-risk tooling, and decision-support systems that reduced manual effort, improved accuracy, and transformed ambiguous business problems into measurable engineering solutions.
+
+---
+
+«Building AI systems where evidence outranks confidence.»

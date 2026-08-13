@@ -4,6 +4,8 @@
 
 I build production AI systems that combine multi-agent orchestration, deterministic validation, and evidence synthesis to improve reliability. My work explores how probabilistic models can be governed through independent verification, auditable decision paths, and structured consensus instead of confidence alone.
 
+I work as the architect and decision authority — directing AI collaborators, Claude among them, through the verification gates I design, the same discipline my projects enforce.
+
 ## [Explore the live project showcase →](https://dsmcewan.github.io/dsmcewan/)
 
 ## Featured Projects

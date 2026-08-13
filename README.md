@@ -13,8 +13,8 @@ I work as the architect and decision authority — directing AI collaborators, C
 ### ⚒️ [TELOS](https://github.com/dsmcewan/TELOS)
 Verification-first orchestration framework that gates AI-generated code through multi-model review and cryptographically verifiable approval.
 
-### 🧠 [LEXI](https://dsmcewan.github.io/LEXI/)
-Production multi-agent conversational AI for long-horizon evidence synthesis and complex communication analysis. [Source →](https://github.com/dsmcewan/LEXI)
+### 🧠 [LEXI](https://github.com/dsmcewan/LEXI)
+Production multi-agent conversational AI for long-horizon evidence synthesis and complex communication analysis. Private repository.
 
 ### 🔀 [Convergence](https://dsmcewan.github.io/Convergence/)
 Evidence synthesis engine that corroborates findings across independent analytical layers before presenting conclusions. [Source →](https://github.com/dsmcewan/Convergence)

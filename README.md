@@ -4,7 +4,7 @@
 
 I build systems around a simple rule:
 
-> **An assertion should not supply the evidence required to promote itself.**
+> **An assertion cannot supply the evidence required to promote itself.**
 
 That shows up differently across the portfolio: independent evidence before a finding, independent review before authority, source-grounding before explanation, and deterministic verification before deployment.
 

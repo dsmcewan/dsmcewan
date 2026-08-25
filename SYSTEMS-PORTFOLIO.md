@@ -1,6 +1,6 @@
 # Verification-First Systems Portfolio — Drason McEwan
 
-## The short version
+## The through-line
 
 I build AI and software systems around one recurring rule:
 
@@ -8,176 +8,181 @@ I build AI and software systems around one recurring rule:
 
 That principle appears differently depending on the problem:
 
-- **Convergence:** a signal cannot promote itself into a finding; independent analytical layers must corroborate it.
-- **TELOS:** a model or builder cannot grant its own authority; evidence, independent review, provenance, and deterministic gates establish whether work may proceed.
-- **LEXI:** generated explanation does not become evidence; analytical outputs remain grounded in retrievable source records.
-- **Crossroad Threads:** creative/product intent is translated into deterministic content, media, test, and deployment pipelines so the experience can be shipped reliably.
+- **Convergence:** a signal cannot promote itself into a finding; independent analytical mechanisms must corroborate it.
+- **TELOS:** a model or builder cannot grant its own authority; evidence, provenance, deterministic gates, and separated decision rights govern progression.
+- **LEXI:** generated explanation does not become evidence; the product stays anchored to retrievable source records and structured analysis.
+- **Crossroad Threads:** creative intent is converted into deterministic content, media, test, and deployment pipelines so a rapid prototype can become a reliable product.
 
-These projects are not four versions of the same application. They show a consistent systems-design methodology applied to evidence, governance, applied AI, and product delivery.
+These are not four versions of the same application. They show the same systems instinct applied to **evidence, authority, applied AI, and product delivery**.
 
 ---
 
 ## 1. TELOS — Verification-first AI engineering governance
 
-**Question:** *When has proposed AI-mediated work earned authority to proceed?*
+**Core question:** *When has proposed AI-mediated work earned authority to proceed?*
 
-TELOS treats approval as an engineering artifact rather than a conversational opinion. Independent model seats review work, evidence and provenance are bound to the decision, deterministic gates reconstruct state from records, and authorization is tied to exact plan/artifact identities.
+TELOS treats approval as an engineering artifact rather than a conversational opinion. Review evidence is attributable and bound to exact artifacts; deterministic gates check the record; authorization is separated from implementation authority, acceptance, and merge.
 
-The governance model also distinguishes historical validity from current authority: a previously legitimate authorization can remain part of the record while being explicitly superseded for new work.
+The system also distinguishes historical authenticity from current authority: a prior authorization can remain valid evidence of what happened while being explicitly superseded for future work.
 
-### Demonstrates
+### Engineering signals
 
-- multi-model orchestration
-- deterministic AI governance
-- evidence/provenance binding
-- cryptographic verification
+- multi-seat / multi-model review architecture
+- deterministic governance gates
+- evidence and provenance binding
+- content-addressed plans and artifacts
+- HMAC / signature verification and Ed25519 settlement records
 - Merkle-DAG / dependency lineage
-- signed approval artifacts
-- fail-closed gates
-- proposal lifecycle design
-- separation of review, authorization, implementation, acceptance, and merge authority
+- fail-closed controls
+- proposal lifecycle modeling
+- separation of duties
 - institutional memory and supersession
 
-**Repository:** https://github.com/dsmcewan/TELOS
+**Start here:** [`dsmcewan/TELOS`](https://github.com/dsmcewan/TELOS)
 
 ---
 
 ## 2. Convergence — Deterministic evidentiary inference
 
-**Question:** *When has independent evidence earned a finding?*
+**Core question:** *When has independent evidence earned a finding?*
 
-Convergence analyzes communication corpora through six independent analytical layers. Each layer emits a normalized signal, but the engine refuses to elevate a finding unless at least one substantive signal is independently corroborated by another layer.
+Convergence analyzes communication corpora through six independent deterministic layers. Every layer emits a common signal shape, but different signals have different permissions: substantive evidence can form the basis of a finding; contextual evidence can strengthen it without manufacturing one.
 
-It then promotes evidence through a deterministic hierarchy:
+A finding elevates only when at least one substantive layer is corroborated by another independent layer.
 
-`fragment → tactic → finding → pattern → campaign`
+The system then changes the claim type through explicit promotion rules:
 
-Each transition has a different auditable rule. The system also supports ordered structural grammars for patterns that depend on sequence rather than simple recurrence.
+```text
+fragment → tactic → finding → pattern → campaign
+```
 
-Language models can explain structured results but cannot change verdicts.
+Patterns require composition or recurrence. Campaigns require repeated elevated findings attributable to the same actor and target over time. A separate grammar tests ordered/cyclic structures where sequence matters.
 
-### Demonstrates
+### Engineering signals
 
 - deterministic evidence synthesis
 - independent-layer corroboration
-- anti-self-validation architecture
+- normalized evidence representation
 - hierarchical inference
-- temporal/pattern composition
-- explainable findings with source footprints
+- temporal / structural composition
+- explainable source footprints
 - adversarial detector evaluation
 - synthetic hard-negative testing
-- optional multi-provider narration behind a narrow seam
+- optional LLM narration behind a narrow non-authoritative seam
+- 272 deterministic tests in the documented run path
 
-**Repository:** https://github.com/dsmcewan/Convergence
+**Start here:** [`dsmcewan/Convergence`](https://github.com/dsmcewan/Convergence)
 
 ---
 
-## 3. LEXI — Applied evidence-grounded AI
+## 3. LEXI — Full-stack applied evidence-grounded AI
 
-**Question:** *How do you make a very large, messy record navigable without letting the model invent the record?*
+**Core question:** *How do you make a very large, messy record navigable without allowing the model to invent the record?*
 
-LEXI is a full-stack communication-forensics and sensemaking platform combining encrypted relational persistence, document ingestion, timeline reconstruction, dynamic retrieval, analytical tools, model routing, and conversational exploration.
+LEXI is a full-stack communication-forensics and sensemaking platform combining encrypted relational persistence, document ingestion, timeline reconstruction, SQL/data tooling, model routing, and conversational exploration.
 
-Queries are routed by complexity so straightforward retrieval does not automatically become an expensive agent loop, while deeper analytical questions can invoke richer SQL/Python/model tooling.
+The architecture uses conventional software for state, retrieval, repeatable calculations, and evidence storage while reserving models for semantic reasoning and explanation where they add value.
 
-### Demonstrates
+Queries are routed by complexity so simple lookup does not automatically become an expensive agent loop.
 
-- full-stack AI product architecture
-- FastAPI / Python
-- React/Vite
-- SQL / relational modeling
-- encrypted SQLCipher persistence
-- document ingestion and timestamp normalization
-- agentic analytical tool loops
-- model/provider routing
-- evidence-grounded conversational AI
+### Engineering signals
+
+- FastAPI / Python backend
+- React/Vite frontend
+- SQL / relational data modeling
+- SQLCipher encrypted persistence
+- document ingestion and chronology normalization
+- dynamic SQL / Python analytical tooling
+- complexity-based reasoning routes
+- retrieval-grounded conversational AI
 - timeline and cross-reference systems
-- infrastructure/deployment design
+- container / infrastructure / deployment design
 
-**Repository:** https://github.com/dsmcewan/LEXI
+**Start here:** [`dsmcewan/LEXI`](https://github.com/dsmcewan/LEXI)
 
 ---
 
 ## 4. Crossroad Threads — Design-forward product incubation
 
-**Question:** *Can an unconventional product concept become a polished, maintainable, deployable system?*
+**Core question:** *Can an unconventional product concept become a polished, maintainable, deployable system?*
 
-Crossroad Threads is a mythology-driven storefront designed as a museum experience. The project turns a creative concept into reusable product primitives and deterministic build pipelines: generated catalog data, automatic accessioning, optimized media derivatives, perceptual-hash asset matching, local TTS narration, static export, and deployment verification.
+Crossroad Threads is a mythology-driven storefront designed as a museum experience. The project converts the concept into reusable product primitives and deterministic build pipelines: catalog generation, automatic accessioning, responsive media derivatives, perceptual-hash asset matching, local narration, static export, and deployment verification.
 
-### Demonstrates
+The value of this project in the portfolio is different from the other three: it shows product shaping and frontend execution, not only verification architecture.
+
+### Engineering signals
 
 - concept-to-code product incubation
-- user-experience/product design
+- product / interaction design
 - Next.js / React / TypeScript
 - content modeling
 - automated catalog generation
 - image/media pipelines
 - perceptual hashing
-- local AI/TTS integration
+- local TTS integration
 - testing
-- CI/CD and GitHub Pages deployment
-- rapid prototyping that survives contact with production constraints
+- CI/CD and GitHub Pages hardening
+- rapid prototyping that survives production constraints
 
-**Repository:** https://github.com/dsmcewan/CrossroadThreads
+This project demonstrates design-forward product engineering; it does **not** by itself claim formal user-research experience.
+
+**Start here:** [`dsmcewan/CrossroadThreads`](https://github.com/dsmcewan/CrossroadThreads)
 
 ---
 
 # The common architecture
 
-The projects repeatedly separate **proposal from proof**.
+Across the portfolio, consequential state changes are not granted by the component making the original assertion.
 
 ```text
-Something proposes a claim / plan / experience
-                 ↓
-Independent or deterministic structure tests it
-                 ↓
-Only surviving material is promoted
-                 ↓
-The promoted artifact remains inspectable
+proposal / signal / generated output
+                ↓
+independent evidence, deterministic checks, or explicit authority
+                ↓
+promotion only after the required burden is met
+                ↓
+inspectable artifact / decision / product state
 ```
 
-That pattern is intentional.
+Probabilistic models remain useful generators, investigators, explainers, and implementation accelerators. The surrounding software decides what is evidence, what can change state, and which actor has authority to do so.
 
-Probabilistic models are extremely useful generators, investigators, explainers, and implementation partners. They are less useful when the same model is allowed to propose something, validate it, declare confidence, and silently turn that confidence into authority.
+That is the portfolio's central engineering position:
 
-The systems therefore use models where semantic reasoning helps while reserving consequential state transitions for explicit rules, independent evidence, or human authority.
+> **Use models for ambiguity. Use deterministic systems for consequential boundaries.**
 
 ---
 
-# What I am looking to do
+# Role fit
 
-The portfolio maps naturally to roles involving:
+The work maps most naturally to roles involving:
 
 - AI Systems Engineering
 - Forward-Deployed Engineering
 - Applied AI Engineering
 - AI Solutions Architecture
 - AI Product Engineering
-- Agentic systems and governance
-- Rapid AI prototyping / product incubation
-- Design-forward technical facilitation
-- Evidence-heavy enterprise workflows
+- Agentic systems / governance / assurance
+- AI evaluation and verification
+- rapid AI prototyping and product incubation
+- evidence-heavy enterprise workflows
 
-The common thread is work where the problem is not merely **"call a model"**, but **"design the surrounding system so a model can be useful without being mistaken for the system itself."**
+The common thread is work where the problem is larger than “call a model”: **design the surrounding system so probabilistic capability can be useful without being mistaken for authority, evidence, or state.**
 
 ---
 
 # Background
 
-Before focusing on AI systems, I spent roughly a decade in financial-services technology and operations, including Citigroup Markets, translating manual and ambiguous operational processes into structured automation, validation, reconciliation, and decision-support systems.
+Before focusing on AI systems, I spent roughly a decade in financial-services technology and operations, including Citigroup Markets, translating manual and ambiguous operational processes into automation, reconciliation, validation, and decision-support systems.
 
-That background strongly influences the portfolio: controls, traceability, exception handling, reconciliation, evidence, and explicit state transitions are treated as architectural concerns rather than cleanup work after the prototype.
+That experience shows up repeatedly in the portfolio: controls, traceability, exception handling, reconciliation, evidence, and explicit state transitions are architectural concerns from the beginning rather than cleanup after a prototype.
 
 ---
 
-# Suggested review paths
+# Suggested review path
 
-**If you care about AI governance / agents:** start with TELOS.
+**AI governance / agents:** TELOS  
+**Evidence synthesis / explainability:** Convergence  
+**Full-stack applied AI:** LEXI  
+**Product incubation / design / frontend:** Crossroad Threads
 
-**If you care about explainability / evidence synthesis:** start with Convergence.
-
-**If you care about full-stack applied AI:** start with LEXI.
-
-**If you care about product incubation / design / frontend execution:** start with Crossroad Threads.
-
-For hiring review, each repository includes or is gaining a `CAREER.md` that translates the technical implementation into a shorter engineering brief while leaving the detailed architecture documentation intact.
+Each repository's `CAREER.md` provides a shorter employment-facing review path while the main README and architecture docs remain technical references.

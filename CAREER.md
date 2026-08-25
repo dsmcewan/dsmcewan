@@ -1,44 +1,57 @@
 # Hiring Manager Quickstart
 
-If you are evaluating Drason McEwan for AI systems, forward-deployed engineering, applied AI, product engineering, or AI prototyping work, the fastest useful review is the portfolio rather than the repository list in isolation.
+If you are evaluating Drason McEwan for AI systems, forward-deployed engineering, applied AI, or technical product work, the fastest useful review is the portfolio as a system rather than the repositories in isolation.
 
 ## Start here
 
 Read [`SYSTEMS-PORTFOLIO.md`](SYSTEMS-PORTFOLIO.md) for the connective architecture across the projects.
 
-The recurring engineering principle is:
+The recurring engineering rule is:
 
 > **An assertion should not supply the evidence required to promote itself.**
 
 ## Pick the project closest to the role
 
-| If the role emphasizes… | Review |
+| Role emphasis | Best starting point |
 | --- | --- |
-| AI governance, agentic systems, verification, provenance | **TELOS** |
-| Evidence synthesis, explainability, deterministic analysis | **Convergence** |
+| AI governance, agentic systems, provenance, verification | **TELOS** |
+| Explainability, evidence synthesis, deterministic analysis | **Convergence** |
 | Full-stack applied AI, data, conversational systems | **LEXI** |
-| Rapid prototyping, design, frontend/product incubation | **Crossroad Threads** |
+| Rapid prototyping, product/design engineering, frontend delivery | **Crossroad Threads** |
 
-## What the portfolio is intended to demonstrate
+## What the portfolio demonstrates
 
-This is not a collection of prompt demos. The projects are designed around the engineering surrounding probabilistic models: data structures, evidence, state, validation, provenance, routing, interfaces, testing, deployment, and human authority.
-
-The work spans:
+These are not prompt-only demos. The engineering work is concentrated in the system around the model:
 
 - Python and TypeScript/JavaScript
 - SQL and relational data systems
-- React / Next.js / Vite
 - FastAPI
+- React / Next.js / Vite
 - multi-provider LLM integration
 - agent/tool orchestration
-- deterministic validation and evals
-- cryptographic provenance and governance
-- knowledge/evidence structures
-- CI/CD and deployment
+- deterministic validation and evaluation
+- provenance and cryptographic controls
+- content-addressed / graph-based lineage
+- evidence and knowledge structures
+- CI/CD, deployment, and infrastructure
 - design-forward product prototyping
+
+## Working style
+
+The projects repeatedly separate **generation from promotion**:
+
+```text
+model / system proposes
+        ↓
+independent evidence or deterministic checks
+        ↓
+promotion only if the required burden is met
+```
+
+That pattern shows up in different forms: a finding in Convergence, an authorization in TELOS, an evidence-grounded explanation in LEXI, and a verified build/deployment artifact in Crossroad Threads.
 
 ## Background
 
-Drason's earlier work was in financial-services technology and operations, including Citigroup Markets, with a focus on turning manual operational processes into automation, reconciliation, validation, and decision-support systems.
+Before focusing on AI systems, Drason spent roughly a decade in financial-services technology and operations, including Citigroup Markets, translating manual processes and ambiguous operational problems into automation, reconciliation, validation, and decision-support systems.
 
-The AI portfolio extends the same systems instinct into probabilistic software: **make the useful part flexible; make the consequential boundaries explicit and testable.**
+The portfolio carries that same instinct into probabilistic software: **keep the flexible part flexible; make consequential boundaries explicit, testable, and inspectable.**

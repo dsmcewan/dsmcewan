@@ -1,38 +1,58 @@
 # Hi, I'm Drason McEwan.
 
-**AI Systems Engineer** focused on verification-first AI, multi-agent systems, and conversational AI.
+**AI Systems Engineer** focused on verification-first AI, agentic systems, and evidence-grounded products.
 
-I build production AI systems that combine multi-agent orchestration, deterministic validation, and evidence synthesis to improve reliability. My work explores how probabilistic models can be governed through independent verification, auditable decision paths, and structured consensus instead of confidence alone.
+I build systems around a simple rule:
 
-I architect the systems and hold decision authority; AI collaborators, Claude among them, implement through verification gates I design. My projects enforce the same discipline.
+> **An assertion cannot supply the evidence required to promote itself.**
 
-## [Explore the live project showcase →](https://dsmcewan.github.io/dsmcewan/)
+That shows up differently across the portfolio: independent evidence before a finding, independent review before authority, source-grounding before explanation, and deterministic verification before deployment.
+
+I use AI coding collaborators as implementation accelerators behind explicit plans, tests, evidence, and verification gates rather than treating model confidence as proof.
+
+## Start here
+
+**[Hiring-manager quickstart →](CAREER.md)**  
+**[Systems portfolio / architecture through-line →](SYSTEMS-PORTFOLIO.md)**  
+**[Live project showcase →](https://dsmcewan.github.io/dsmcewan/)**
 
 ## Featured Projects
 
 ### ⚒️ [TELOS](https://github.com/dsmcewan/TELOS)
-Verification-first orchestration framework that gates AI-generated code through multi-model review and cryptographically verifiable approval.
+Verification-first governance for AI-mediated engineering: content-addressed plans, independent review seats, provenance-bound evidence, deterministic gates, Merkle-DAG lineage, and cryptographically verifiable decision records.
+
+**Best signal for:** AI systems, agent governance, assurance, provenance, fail-closed architecture.
+
+### 🔀 [Convergence](https://github.com/dsmcewan/Convergence)
+Deterministic evidence-synthesis engine that promotes signals through independent corroboration into findings, patterns, and campaigns. Language models can explain results but cannot move verdicts.
+
+**Best signal for:** explainability, evidence fusion, evaluation, deterministic inference.  
+**[Live demo →](https://dsmcewan.github.io/Convergence/)**
 
 ### 🧠 [LEXI](https://github.com/dsmcewan/LEXI)
-Multi-agent forensic NLP platform: four LLMs behind a complexity-routing pipeline, with bias validation held separate from generation. Private repository; walkthrough available on request.
+Full-stack evidence-grounded communication-forensics platform with encrypted relational storage, document ingestion, timeline/cross-reference analysis, complexity-based reasoning routes, and conversational exploration anchored to source records.
 
-### 🔀 [Convergence](https://dsmcewan.github.io/Convergence/)
-Evidence synthesis engine that corroborates findings across independent analytical layers before presenting conclusions. [Source →](https://github.com/dsmcewan/Convergence)
+**Best signal for:** applied AI, FastAPI/Python, SQL/data systems, React, agentic analytical workflows.
 
-### ⚡ [Crossroad Threads](https://dsmcewan.github.io/CrossroadThreads/)
-Production-grade mythology-driven storefront demonstrating product design, content systems, and responsive web engineering. [Source →](https://github.com/dsmcewan/CrossroadThreads)
+### ⚡ [Crossroad Threads](https://github.com/dsmcewan/CrossroadThreads)
+Design-forward product incubation: a mythology-driven storefront built as a museum experience, with generated catalog data, automated accessioning, optimized media pipelines, perceptual-hash asset matching, local narration, testing, and static deployment.
+
+**Best signal for:** rapid prototyping, product/design engineering, Next.js/TypeScript, build and deployment systems.  
+**[Live site →](https://dsmcewan.github.io/CrossroadThreads/)**
 
 ## Engineering Principles
 
 - Evidence before confidence.
 - Verification before generation.
 - Plans before agents.
-- Deterministic systems over prompt-only workflows.
-- Trust is earned through independent validation.
+- Deterministic controls at consequential boundaries.
+- Keep proposal, proof, authority, and execution separate when the distinction matters.
 
 ## Background
 
-Before focusing on AI systems, I spent a decade at **Citigroup Markets** designing automation, operational-risk tooling, and decision-support systems that reduced manual effort, improved accuracy, and transformed ambiguous business problems into measurable engineering solutions.
+Before focusing on AI systems, I spent roughly a decade in financial-services technology and operations, including **Citigroup Markets**, building automation, validation, reconciliation, operational-risk tooling, and decision-support systems for ambiguous business processes.
+
+That background still drives the architecture: make the flexible part flexible, but make state, evidence, exceptions, and authority explicit.
 
 ---
 

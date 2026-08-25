@@ -4,7 +4,7 @@
 
 I build AI and software systems around one recurring rule:
 
-> **An assertion should not supply the evidence required to promote itself.**
+> **An assertion cannot supply the evidence required to promote itself.**
 
 That principle appears differently depending on the problem:
 

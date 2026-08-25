@@ -8,7 +8,7 @@ Read [`SYSTEMS-PORTFOLIO.md`](SYSTEMS-PORTFOLIO.md) for the connective architect
 
 The recurring engineering rule is:
 
-> **An assertion should not supply the evidence required to promote itself.**
+> **An assertion cannot supply the evidence required to promote itself.**
 
 ## Pick the project closest to the role
 

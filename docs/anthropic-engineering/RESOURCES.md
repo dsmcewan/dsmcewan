@@ -20,7 +20,7 @@ Additional official repos surfaced while researching the articles:
 Companion catalog of official Anthropic cookbooks, quickstarts, specs, SDK repos, and documentation pages referenced by (or implementing concepts from) the Anthropic engineering blog. Compiled 2026-09-21.
 
 Sourcing notes:
-- `www.anthropic.com`, `anthropic.com`, `web.archive.org`, `agentskills.io` were network-blocked; everything below was pulled from `platform.claude.com`, `code.claude.com`, `github.com` (rendered tree pages), `raw.githubusercontent.com`, and GitHub code search.
+- `www.anthropic.com`, `anthropic.com`, `web.archive.org`, `agentskills.io` were network-blocked in the authoring environment; everything below was pulled from `platform.claude.com`, `code.claude.com`, `github.com` (rendered tree pages), `raw.githubusercontent.com`, and GitHub code search.
 - `github.com/anthropics/anthropic-cookbook` redirects to `github.com/anthropics/claude-cookbooks`; `github.com/anthropics/anthropic-quickstarts` redirects to `claude-quickstarts`. Older docs links (`docs.anthropic.com`, `docs.claude.com`) redirect to `platform.claude.com`.
 - `github.com/anthropics/dxt` is now `github.com/anthropics/mcpb` (same README served from both).
 - The Agent Skills spec file in `anthropics/skills/spec/agent-skills-spec.md` is now a one-line pointer to `https://agentskills.io/specification`; the spec source is `https://github.com/agentskills/agentskills/blob/main/docs/specification.mdx` (quoted in section C).

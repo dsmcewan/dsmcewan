@@ -38,8 +38,10 @@ def load_claims():
         line = line.rstrip("\n")
         if not line or line.startswith("#"):
             continue
-        slug, text = line.split("\t", 1)
-        claims.setdefault(slug, []).append(text)
+        parts = line.split("\t")
+        slug, text = parts[0], parts[1]
+        live_only = len(parts) > 2 and parts[2].strip() == "live"
+        claims.setdefault(slug, []).append((text, live_only))
     return claims
 
 def normalize(text):
@@ -91,7 +93,9 @@ def main():
         # Posts that now redirect to a docs page carry no publication line.
         entry["date_found"] = True if slug in NO_DATE else any(f in text for f in date_forms)
         checks = []
-        for c in claims.get(slug, []):
+        for c, live_only in claims.get(slug, []):
+            if live_only and args.source != "live":
+                continue  # matches only the live HTML rendering, not the markdown archive
             checks.append({"claim": c, "found": normalize(c) in text})
         entry["claims"] = checks
         missing = [c for c in checks if not c["found"]]

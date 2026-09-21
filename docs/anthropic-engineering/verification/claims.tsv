@@ -137,3 +137,107 @@ april-23-postmortem	100 words
 how-we-contain-claude	Seatbelt
 how-we-contain-claude	83%
 how-we-contain-claude	Cowork
+# Rows below were contributed by the independent fidelity pass on 2026-09-21 (all matched live).
+contextual-retrieval	reducing latency by > 2x
+contextual-retrieval	Gemini Text 004
+contextual-retrieval	top 150
+contextual-retrieval	top 20 chunks
+contextual-retrieval	50-100 tokens
+contextual-retrieval	Cohere reranker
+building-effective-agents	Maintain simplicity in your agent's design	live
+building-effective-agents	Poka-yoke your tools	live
+building-effective-agents	Rivet
+building-effective-agents	Vellum
+swe-bench-sonnet	Erik Schluntz
+swe-bench-sonnet	SWE-Agent
+claude-think-tool	0.783
+claude-think-tool	"thought"
+claude-think-tool	append the thought to the log
+multi-agent-research-system	200,000 tokens
+multi-agent-research-system	30% to 80%
+multi-agent-research-system	20 quer
+multi-agent-research-system	3-5 subagents
+desktop-extensions	mcpb
+desktop-extensions	One-click
+writing-tools-for-agents	25,000 tokens
+writing-tools-for-agents	206 tokens
+writing-tools-for-agents	72 tokens
+writing-tools-for-agents	2025 to the tool’s query	live
+writing-tools-for-agents	Ken Aizawa
+writing-tools-for-agents	new hire
+a-postmortem-of-three-recent-issues	0.18%
+a-postmortem-of-three-recent-issues	0.0004%
+a-postmortem-of-three-recent-issues	August 5
+a-postmortem-of-three-recent-issues	August 25
+a-postmortem-of-three-recent-issues	August 29
+a-postmortem-of-three-recent-issues	August 31
+a-postmortem-of-three-recent-issues	September 2
+a-postmortem-of-three-recent-issues	September 4
+a-postmortem-of-three-recent-issues	September 16
+a-postmortem-of-three-recent-issues	xla_allow_excess_precision
+a-postmortem-of-three-recent-issues	bf16
+a-postmortem-of-three-recent-issues	Sam McAllister
+building-agents-with-the-claude-agent-sdk	give your agents a computer
+building-agents-with-the-claude-agent-sdk	Thariq Shihipar
+building-agents-with-the-claude-agent-sdk	claude-agent-sdk
+building-agents-with-the-claude-agent-sdk	September 29, 2025
+effective-context-engineering-for-ai-agents	Prithvi Rajasekaran
+effective-context-engineering-for-ai-agents	1,000-2,000 tokens
+effective-context-engineering-for-ai-agents	Sep 29, 2025
+equipping-agents-for-the-real-world-with-agent-skills	Keith Lazuka
+equipping-agents-for-the-real-world-with-agent-skills	new hire
+equipping-agents-for-the-real-world-with-agent-skills	Oct 16, 2025
+claude-code-sandboxing	seatbelt
+claude-code-sandboxing	Filesystem isolation
+claude-code-sandboxing	network isolation
+claude-code-sandboxing	Oct 20, 2025
+code-execution-with-mcp	150,000 tokens
+code-execution-with-mcp	Adam Jones
+advanced-tool-use	191,300
+advanced-tool-use	49% to 74%
+advanced-tool-use	79.5%
+advanced-tool-use	43,588
+advanced-tool-use	25.6%
+advanced-tool-use	46.5%
+advanced-tool-use	72% to 90%
+advanced-tool-use	Nov 24, 2025
+effective-harnesses-for-long-running-agents	200 features
+effective-harnesses-for-long-running-agents	Justin Young
+effective-harnesses-for-long-running-agents	Nov 26, 2025
+demystifying-evals-for-ai-agents	CORE-Bench
+demystifying-evals-for-ai-agents	Mikaela Grace
+AI-resistant-technical-evaluations	4-hour
+AI-resistant-technical-evaluations	Tristan Hume
+AI-resistant-technical-evaluations	1790
+AI-resistant-technical-evaluations	2164
+AI-resistant-technical-evaluations	Jan 21, 2026
+building-c-compiler	16 agents
+building-c-compiler	2,000
+building-c-compiler	100,000-line
+building-c-compiler	Nicholas Carlini
+infrastructure-noise	Gian Segato
+eval-awareness-browsecomp	eleven
+eval-awareness-browsecomp	3.7x
+eval-awareness-browsecomp	Russell Coleman
+harness-design-long-running-apps	Prithvi Rajasekaran
+harness-design-long-running-apps	context anxiety
+harness-design-long-running-apps	Mar 24, 2026
+claude-code-auto-mode	John Hughes
+claude-code-auto-mode	Mar 25, 2026
+managed-agents	Lance Martin
+april-23-postmortem	2.1.101
+april-23-postmortem	2.1.116
+april-23-postmortem	Apr 23, 2026
+how-we-contain-claude	Max McGuinness
+how-we-contain-claude	May 25, 2026
+claude-think-tool	contributing to the achieved state-of-the-art score of 0.623
+advanced-tool-use	Written by Bin Wu
+building-effective-agents	Rivet , a drag and drop GUI LLM workflow builder	live
+building-effective-agents	another GUI tool for building and testing complex workflows
+code-execution-with-mcp	Published Nov 04, 2025
+demystifying-evals-for-ai-agents	Published Jan 09, 2026
+infrastructure-noise	Published Feb 05, 2026
+building-c-compiler	Published Feb 05, 2026
+managed-agents	Published Apr 08, 2026
+eval-awareness-browsecomp	Published Mar 06, 2026
+how-we-contain-claude	Across 25 retries of that prompt, Claude completed the exfiltration 24 times

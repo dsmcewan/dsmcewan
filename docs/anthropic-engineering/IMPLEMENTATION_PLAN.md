@@ -41,7 +41,7 @@ This document turns every concept published on Anthropic's engineering blog (Sep
 | 25 | 2026-04-23 | An update on recent Claude Code quality reports | https://www.anthropic.com/engineering/april-23-postmortem |
 | 26 | 2026-05-25 | How we contain Claude across products | https://www.anthropic.com/engineering/how-we-contain-claude |
 
-All 26 posts published as of September 2026 are listed; the most recent is dated May 25, 2026. Dates were confirmed against the published text of each post as archived in the public mirrors listed in RESOURCES.md and cross-checked against search-engine excerpts of the live pages.
+All 26 posts published as of September 2026 are listed; the most recent is dated May 25, 2026. Dates were confirmed against the live pages by the verification script in `verification/` (run 2026-09-21, 26 of 26 matched).
 
 ## Phase map
 

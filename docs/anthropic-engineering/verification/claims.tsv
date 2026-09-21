@@ -1,0 +1,77 @@
+# slug<TAB>literal text expected in the live article (whitespace and quote style are normalized)
+contextual-retrieval	49%
+contextual-retrieval	67%
+contextual-retrieval	$1.02 per million document tokens
+contextual-retrieval	200,000 tokens
+building-effective-agents	predefined code paths
+building-effective-agents	Poka-yoke
+building-effective-agents	agent-computer interface
+swe-bench-sonnet	49%
+swe-bench-sonnet	45%
+swe-bench-sonnet	str_replace
+claude-think-tool	54%
+claude-think-tool	0.812
+claude-think-tool	1.6%
+claude-code-best-practices	CLAUDE.md
+claude-code-best-practices	/permissions
+claude-code-best-practices	/rewind
+claude-code-best-practices	plan mode
+multi-agent-research-system	90.2%
+multi-agent-research-system	15x
+multi-agent-research-system	80%
+desktop-extensions	.mcpb
+desktop-extensions	manifest.json
+writing-tools-for-agents	asana_search
+writing-tools-for-agents	response_format
+a-postmortem-of-three-recent-issues	16%
+a-postmortem-of-three-recent-issues	XLA:TPU
+building-agents-with-the-claude-agent-sdk	Claude Agent SDK
+building-agents-with-the-claude-agent-sdk	gather context
+effective-context-engineering-for-ai-agents	context rot
+effective-context-engineering-for-ai-agents	right altitude
+effective-context-engineering-for-ai-agents	compaction
+equipping-agents-for-the-real-world-with-agent-skills	SKILL.md
+equipping-agents-for-the-real-world-with-agent-skills	progressive disclosure
+claude-code-sandboxing	84%
+claude-code-sandboxing	bubblewrap
+code-execution-with-mcp	150,000
+code-execution-with-mcp	98.7%
+code-execution-with-mcp	callMCPTool
+advanced-tool-use	advanced-tool-use-2025-11-20
+advanced-tool-use	defer_loading
+advanced-tool-use	input_examples
+advanced-tool-use	85%
+advanced-tool-use	49%
+advanced-tool-use	74%
+effective-harnesses-for-long-running-agents	claude-progress.txt
+effective-harnesses-for-long-running-agents	init.sh
+effective-harnesses-for-long-running-agents	"passes": false
+demystifying-evals-for-ai-agents	pass^k
+demystifying-evals-for-ai-agents	pass@k
+demystifying-evals-for-ai-agents	Harbor
+AI-resistant-technical-evaluations	1487
+AI-resistant-technical-evaluations	Zachtronics
+building-c-compiler	100,000
+building-c-compiler	$20,000
+building-c-compiler	2 billion
+infrastructure-noise	6 percentage points
+infrastructure-noise	5.8%
+infrastructure-noise	1.54
+eval-awareness-browsecomp	1,266
+eval-awareness-browsecomp	0.87%
+eval-awareness-browsecomp	86.57%
+harness-design-long-running-apps	$124.70
+harness-design-long-running-apps	27 criteria
+harness-design-long-running-apps	Playwright
+claude-code-auto-mode	93%
+claude-code-auto-mode	0.4%
+claude-code-auto-mode	17%
+managed-agents	execute(name, input)
+managed-agents	cattle
+managed-agents	60%
+april-23-postmortem	clear_thinking_20251015
+april-23-postmortem	v2.1.101
+april-23-postmortem	3%
+how-we-contain-claude	gVisor
+how-we-contain-claude	bubblewrap
+how-we-contain-claude	OTLP

@@ -1,0 +1,17 @@
+# Live verification
+
+`verify_live.py` makes the provenance check mechanical. For each of the 26 articles in the index of `IMPLEMENTATION_PLAN.md` it fetches the page, records a SHA-256 of the normalized text, checks that the publication date appears, and checks that every string in `claims.tsv` for that article appears verbatim. It writes `report.md` and `report.json` and exits non-zero on any failure.
+
+```bash
+# From an environment that can reach www.anthropic.com:
+python3 docs/anthropic-engineering/verification/verify_live.py --source live
+
+# From an environment that cannot (uses the public archives named in RESOURCES.md):
+python3 docs/anthropic-engineering/verification/verify_live.py --source mirror
+```
+
+Pass `--ca-bundle <file>` when your proxy uses a private CA. `--only slug1,slug2` restricts the run. `claims.tsv` is tab-separated: article slug, then the literal text expected on the page. Add a line for any figure or configuration you want checked. `mirror_overrides.json` maps a slug to an alternative archive URL when the primary archive lacks the post.
+
+`claude-code-best-practices` is exempt from the date check because that URL now serves the living docs page, which carries no publication line.
+
+The committed `report.md` is the archive run; replace it with a `--source live` run when one is available.

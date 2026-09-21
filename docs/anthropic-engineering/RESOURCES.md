@@ -4,10 +4,10 @@ Companion to [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md). Every cookbook,
 
 ## Article text sources
 
-The live index at https://www.anthropic.com/engineering could not be fetched from this environment. Full article text was verified against these public mirrors:
+The live pages at https://www.anthropic.com/engineering and https://claude.com/blog could not be fetched from the session environment (blocked by its network policy). Full article text was taken from unofficial public archives of the posts, then cross-checked against search-engine excerpts that quote the live pages and against the official cookbooks, docs and repos each post links to. The archives are not Anthropic-maintained, so spot-check any quotation against the live URL in the article index before relying on it verbatim.
 
-- https://github.com/ai-native-engineer/anthropic-mirror (directory `www.anthropic.com/engineering/`, 25 of the 26 posts; missing the Agent SDK post)
-- https://github.com/thevibeworks/claude-code-docs (directory `content/blog/engineering/`)
+- https://github.com/ai-native-engineer/anthropic-mirror (directory `www.anthropic.com/engineering/`; 25 of the 26 posts, lacking the Agent SDK post)
+- https://github.com/thevibeworks/claude-code-docs (directory `content/blog/engineering/`; includes the Agent SDK post, which Anthropic also publishes at https://claude.com/blog/building-agents-with-the-claude-agent-sdk)
 - https://github.com/chyornyy/anthropic_engineering_md
 
 Additional official repos surfaced while researching the articles:

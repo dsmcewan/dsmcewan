@@ -2,7 +2,7 @@
 
 Source index: https://www.anthropic.com/engineering
 
-This document turns every concept published on Anthropic's engineering blog (September 2024 through April 2026, 26 articles) into a single ordered implementation program. Each phase lists the articles it draws from, the concepts to implement, the concrete methods, techniques and configurations, the official cookbooks and docs to use, an ordered checklist, and exit criteria. A companion catalog of every hyperlink, cookbook, quickstart, spec and configuration reference lives in [RESOURCES.md](./RESOURCES.md). Per-article research notes live in [ARTICLE_NOTES.md](./ARTICLE_NOTES.md).
+This document turns every concept published on Anthropic's engineering blog (September 2024 through May 2026, 26 articles) into a single ordered implementation program. Each phase lists the articles it draws from, the concepts to implement, the concrete methods, techniques and configurations, the official cookbooks and docs to use, an ordered checklist, and exit criteria. A companion catalog of every hyperlink, cookbook, quickstart, spec and configuration reference lives in [RESOURCES.md](./RESOURCES.md). Per-article research notes live in [ARTICLE_NOTES.md](./ARTICLE_NOTES.md).
 
 ## How this plan was built
 
@@ -41,7 +41,7 @@ This document turns every concept published on Anthropic's engineering blog (Sep
 | 25 | 2026-04-23 | An update on recent Claude Code quality reports | https://www.anthropic.com/engineering/april-23-postmortem |
 | 26 | 2026-05-25 | How we contain Claude across products | https://www.anthropic.com/engineering/how-we-contain-claude |
 
-All 26 posts published through September 2026 are listed. Dates were confirmed against the published text of each post.
+All 26 posts published as of September 2026 are listed; the most recent is dated May 25, 2026. Dates were confirmed against the published text of each post as archived in the public mirrors listed in RESOURCES.md and cross-checked against search-engine excerpts of the live pages.
 
 ## Phase map
 
@@ -274,7 +274,7 @@ Prompt caching parameters for the whole-corpus alternative: `cache_control: {"ty
 
 ### Exit criteria
 
-- Recall@20 improves over the baseline on your eval set by a margin you can reproduce.
+- Recall@20 improves over the baseline on your eval set by at least 3 percentage points, reproduced across two independent runs (the article reports the failure rate falling from 5.7% to 1.9% on its datasets).
 - Ingestion cost per million tokens is recorded and within budget.
 
 ---
@@ -417,7 +417,7 @@ Code execution with MCP (article #14):
 - Control flow in code (loops, conditionals, retries) instead of round trips through the model.
 - Privacy: intermediate results stay in the sandbox; the MCP client can tokenize PII before it reaches the model.
 - State and skills: persist files and reusable functions; formalize them as `SKILL.md` skills (Phase 4).
-- Caveat: agent-generated code needs a sandbox with resource limits and monitoring (Phase 8).
+- Caveat: agent-generated code needs a sandbox with resource limits and monitoring. A basic container sandbox is enough for this phase; Phase 8 hardens it.
 
 Desktop Extensions (article #7):
 
@@ -509,7 +509,7 @@ Tool evaluation cookbook: `tool_evaluation/tool_evaluation.ipynb` with tasks def
 
 ### Exit criteria
 
-- Tool eval pass rate and token cost per task are tracked per commit.
+- Tool eval pass rate is at least 90% on the regression tasks and is tracked per commit; tokens per task stay within a written budget and did not rise on the latest change.
 - Tool definition tokens in the system prompt are under budget with search enabled.
 - At least one multi-step workflow runs via code execution with intermediate data never entering context.
 
@@ -569,7 +569,7 @@ pdf/
 
 Locations: Claude Code personal `~/.claude/skills/<name>/SKILL.md`, project `.claude/skills/<name>/SKILL.md`, plugins, and the Skills API for the Developer Platform (`/v1/skills` with `container.skills` on messages, code execution beta).
 
-Memory tool (Developer Platform, beta): tool type `memory_20250818`, commands `view`, `create`, `str_replace`, `insert`, `delete`, `rename` against a `/memories` directory you persist; context editing with `context_management: {"edits": [{"type": "clear_tool_uses_20250919", "trigger": {"type": "input_tokens", "value": 100000}, "keep": {"type": "tool_uses", "value": 3}}]}` and the `clear_thinking_20251015` strategy. Beta header `context-management-2025-06-27`.
+Memory tool (Developer Platform, beta): tool type `memory_20250818`, commands `view`, `create`, `str_replace`, `insert`, `delete`, `rename` against a `/memories` directory you persist; context editing with `context_management: {"edits": [{"type": "clear_tool_uses_20250919", "trigger": {"type": "input_tokens", "value": 100000}, "keep": {"type": "tool_uses", "value": 3}}]}` and the `clear_thinking_20251015` strategy. A beta header was required at launch; check the current docs for whether one is still needed.
 
 Claude Code compaction controls: `/compact <instructions>`, automatic compaction near the limit, a `CLAUDE.md` line such as "When compacting, preserve the full list of modified files and the test commands", and checkpoint-based "Summarize from here" or "Summarize up to here".
 
@@ -790,7 +790,7 @@ Claude Code agent teams and dynamic workflows now provide this pattern natively:
 
 ### Exit criteria
 
-- Research eval score beats the single-agent baseline at an acceptable token cost.
+- Research eval score from the judge rubric beats the single-agent baseline by at least 20% relative, at no more than 15x the token cost of a chat baseline.
 - A team of at least four agents makes a full day of unattended progress on a real task without duplicate work or broken main.
 
 ---
@@ -1172,7 +1172,7 @@ Managed Agents product surface (Developer Platform): agents, environments, sessi
 
 ### Exit criteria
 
-- Time from first user report to root cause is measured and shrinking.
+- Time from first user report to root cause is recorded for every incident and stays under seven days (the 2025 postmortem took roughly a month from first reports to the last fix).
 - Every incident produces a postmortem and at least one new regression eval.
 
 ---
@@ -1182,7 +1182,7 @@ Managed Agents product surface (Developer Platform): agents, environments, sessi
 - Tool design (Phase 3) is the most reused foundation: multi-agent research, the Agent SDK, skills and code execution all assume well-described, token-efficient tools.
 - Context engineering (Phase 4) is required before long-running harnesses (Phase 7) and Managed Agents (Phase 10), which externalize context into files and session logs.
 - Evaluation (Phase 9) gates Phases 3, 5, 6, 7 and 11; the tool evals and the research judge are early instances of it.
-- Security (Phase 8) is a precondition for any unattended execution in Phases 6, 7 and 10; code execution patterns in Phase 3 depend on it.
+- Security (Phase 8) is a precondition for any unattended execution in Phases 6, 7 and 10. Phase 3's code-execution work runs in a basic container sandbox until Phase 8 hardens it.
 - Operations (Phase 11) is where the two postmortems' commitments become standing practice for everything above.
 
 ## Suggested sequencing for a small team

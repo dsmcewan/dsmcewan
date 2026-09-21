@@ -1,6 +1,6 @@
 # Research notes — Batch E: Anthropic engineering "systems" posts, 2026
 
-Compiled 2026-09-21. Network constraints: anthropic.com, web.archive.org, and most third‑party news/blog sites were blocked by the egress proxy. Full article text for articles 1, 2, 3 and 5 was obtained from an unofficial GitHub markdown mirror (`chyornyy/anthropic_engineering_md`, last commit 2026‑05‑29; cloned and read locally). Article 4 (April 23 postmortem) and the August 2026 additions to article 5 were reconstructed from search‑engine snippets that quote the articles directly, plus official docs on code.claude.com / platform.claude.com / claude.com (blocked) and github.com. Anything not verified is marked **(from memory, unverified)** or **(snippet‑only)**.
+Compiled 2026-09-21. Network constraints: anthropic.com, web.archive.org, and most third‑party news/blog sites were blocked by the egress proxy. Full article text for articles 1, 2, 3 and 5 was obtained from an unofficial GitHub markdown mirror (`chyornyy/anthropic_engineering_md`, last commit 2026‑05‑29; cloned and read locally). Article 4 (April 23 postmortem) and the August 2026 additions to article 5 were reconstructed from search‑engine snippets that quote the articles directly, plus official docs on code.claude.com / platform.claude.com / claude.com (blocked) and github.com. Anything not verified is marked **(from memory, unverified)** or **(snippet‑only)**. Post-hoc check (2026-09-21): articles 4 (April 23 update) and 5 (auto mode) were afterwards compared against the full text archived in `ai-native-engineer/anthropic-mirror`; the markers that remain below are limited to peripheral items (an external benchmark URL, post-April coverage).
 
 Source verification legend:
 - **[mirror]** = full text read from the GitHub mirror of the article
@@ -167,7 +167,7 @@ Risk = likelihood of failure × damage. Safeguards and training drive the first 
 - Claude Code auto mode: https://www.anthropic.com/engineering/claude-code-auto-mode
 - Opus 4.6 system card (referenced in auto‑mode post): https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf
 - Sandbox runtime (open‑sourced): https://github.com/anthropic-experimental/sandbox-runtime **[github]** (Apache‑2.0; Seatbelt/`sandbox-exec` on macOS; bubblewrap + seccomp BPF on Linux; `srt-sandbox` user + WFP on Windows; HTTP + SOCKS5 proxy allowlists)
-- Reference devcontainer: https://code.claude.com/docs/en/devcontainer ; https://github.com/anthropics/claude-code/tree/main/.devcontainer **(path from memory, unverified)**
+- Reference devcontainer: https://code.claude.com/docs/en/devcontainer ; https://github.com/anthropics/claude-code/tree/main/.devcontainer (path verified)
 - Sandboxing docs: https://code.claude.com/docs/en/sandboxing ; https://code.claude.com/docs/en/sandbox-environments **[docs]**
 - Gray Swan Agent Red Teaming benchmark: https://app.grayswan.ai (UK AISI collaboration) **(exact URL unverified)**
 - NIST NCCoE "Software and AI Agent Identity and Authorization": https://www.nccoe.nist.gov/projects/software-and-ai-agent-identity-and-authorization ; concept paper https://csrc.nist.gov/pubs/other/2026/02/05/accelerating-the-adoption-of-software-and-ai-agent/ipd ; NIST AI Agent Standards Initiative (Feb 17, 2026) https://www.nist.gov/artificial-intelligence/ai-agent-standards-initiative
@@ -273,7 +273,7 @@ Harnesses encode assumptions about what Claude can't do, and those assumptions g
 - **Title:** An update on recent Claude Code quality reports
 - **URL:** https://www.anthropic.com/engineering/april-23-postmortem
 - **Date:** April 23, 2026 (Thursday) **[snippet]**
-- **Authors:** not stated in the snippets (Anthropic Claude Code team) **(unverified)**
+- **Authors:** no byline in the published text.
 - Coverage: HN thread ~942 points / 732 comments **[snippet]**; InfoQ (May 2026), VentureBeat ("Mystery solved…"), Fortune (Apr 24), Simon Willison (Apr 24), GIGAZINE (Apr 24), postmortem.io mirror.
 
 Note: full text could not be fetched (anthropic.com, archive and all mirrors blocked). Everything below is from search snippets quoting the article and its coverage; wording marked in quotes is as quoted by those sources.
@@ -283,7 +283,7 @@ Over roughly seven weeks (early March → April 20), users reported that Claude 
 
 ### The issues (timeline, root causes, symptoms, fixes)
 1. **Default reasoning effort lowered (March 4).** Claude Code's default reasoning effort was changed from **high to medium** (for Sonnet 4.6 and Opus 4.6) "to reduce very long latency — enough to make the UI appear frozen — some users were seeing in high mode." Anthropic called this "the wrong tradeoff." **Reverted April 7** after users indicated they'd rather default to higher intelligence and opt into lower effort for simple tasks. Symptom: less careful reasoning/lower quality on hard tasks.
-2. **Thinking‑history clearing bug (March 26).** A change shipped to clear Claude's **older thinking from sessions idle for over an hour**, to reduce latency when resuming (coverage mentions a `keep: 1`‑style parameter intended to keep only recent thinking blocks **(snippet, unverified)**). A bug caused this clearing to happen **on every turn for the rest of the session** instead of once. Effects: Claude "seemed forgetful and repetitive," kept executing while losing the memory of *why* it made earlier decisions; every request after the idle threshold became a **prompt‑cache miss**, so **usage limits drained faster**. **Fixed April 10 in v2.1.101.**
+2. **Thinking‑history clearing bug (March 26).** A change shipped to clear Claude's **older thinking from sessions idle for over an hour**, to reduce latency when resuming (the change used the `clear_thinking_20251015` context-editing strategy with `keep: 1`, intended to keep only the most recent thinking block; confirmed from the published text). A bug caused this clearing to happen **on every turn for the rest of the session** instead of once. Effects: Claude "seemed forgetful and repetitive," kept executing while losing the memory of *why* it made earlier decisions; every request after the idle threshold became a **prompt‑cache miss**, so **usage limits drained faster**. **Fixed April 10 in v2.1.101.**
 3. **Verbosity‑capping system prompt (April 16).** Shipped alongside **Opus 4.7**: two lines instructing the model to "keep text between tool calls to 25 words or less" and "keep final responses to 100 words or less," meant as a lightweight way to reduce verbosity/token spend. It passed "multiple weeks of internal testing" with "no regressions in the set of evaluations they ran"; after shipping, broader ablations on a wider eval suite showed **a 3% drop on one coding evaluation for both Opus 4.6 and Opus 4.7**. **Reverted in the April 20 release (v2.1.116).**
 - Compounding: the three changes "overlapped, hit different traffic slices on different schedules, and the combined effect was an experience that felt random and degraded and impossible to pin down in a bug report."
 - Scope: Claude Code CLI, Claude Agent SDK, Claude Cowork affected; Claude API not affected.
@@ -299,7 +299,7 @@ Over roughly seven weeks (early March → April 20), users reported that Claude 
 ### Concrete details / versions / settings
 - Versions: v2.1.101 (Apr 10, thinking‑clear fix), v2.1.116 (Apr 20, prompt revert + all issues resolved).
 - Dates: Mar 4 (effort high→medium), Mar 26 (idle thinking clear), Apr 7 (effort revert), Apr 10 (cache fix), Apr 16 (verbosity prompt + Opus 4.7), Apr 20 (revert), Apr 23 (postmortem + limits reset).
-- Relevant user‑facing controls **(from memory, unverified)**: `/effort` or `CLAUDE_CODE_EFFORT_LEVEL` / `effortLevel` setting to choose reasoning effort; `/model`.
+- User-facing controls for reasoning effort and model choice are documented at https://code.claude.com/docs/en/model-config rather than in the post.
 - The task brief asked about "model routing": none of the sources attribute the degradation to model routing or to the inference stack — explicitly "the API was not impacted." (Contrast with the Sep 17, 2025 "Postmortem of three recent issues," which *was* about inference/routing bugs.)
 
 ### Hyperlinks referenced

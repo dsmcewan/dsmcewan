@@ -75,3 +75,65 @@ april-23-postmortem	3%
 how-we-contain-claude	gVisor
 how-we-contain-claude	bubblewrap
 how-we-contain-claude	OTLP
+contextual-retrieval	35%
+contextual-retrieval	5.7%
+contextual-retrieval	1.9%
+contextual-retrieval	top-20
+building-effective-agents	orchestrator
+building-effective-agents	evaluator-optimizer
+building-effective-agents	Prompt chaining
+swe-bench-sonnet	SWE-bench Verified
+swe-bench-sonnet	500
+claude-think-tool	0.570
+claude-think-tool	0.370
+claude-think-tool	0.623
+claude-code-best-practices	/clear
+claude-code-best-practices	claude -p
+multi-agent-research-system	CitationAgent
+multi-agent-research-system	rainbow deployments
+multi-agent-research-system	3-10 tool calls
+desktop-extensions	user_config
+writing-tools-for-agents	jira_search
+a-postmortem-of-three-recent-issues	0.8%
+a-postmortem-of-three-recent-issues	Trainium
+building-agents-with-the-claude-agent-sdk	verify
+effective-context-engineering-for-ai-agents	attention budget
+effective-context-engineering-for-ai-agents	just in time
+equipping-agents-for-the-real-world-with-agent-skills	reference.md
+equipping-agents-for-the-real-world-with-agent-skills	forms.md
+claude-code-sandboxing	/sandbox
+code-execution-with-mcp	2,000
+code-execution-with-mcp	search_tools
+advanced-tool-use	tool_search_tool_regex
+advanced-tool-use	code_execution_20250825
+advanced-tool-use	37%
+advanced-tool-use	72%
+advanced-tool-use	90%
+effective-harnesses-for-long-running-agents	initializer
+effective-harnesses-for-long-running-agents	Puppeteer
+demystifying-evals-for-ai-agents	Braintrust
+demystifying-evals-for-ai-agents	LangSmith
+demystifying-evals-for-ai-agents	Terminal-Bench
+AI-resistant-technical-evaluations	1363
+AI-resistant-technical-evaluations	Perfetto
+building-c-compiler	99%
+building-c-compiler	140 million
+infrastructure-noise	2.1%
+infrastructure-noise	227
+infrastructure-noise	p = 0.40
+eval-awareness-browsecomp	0.24%
+eval-awareness-browsecomp	40.5 million
+harness-design-long-running-apps	$200
+harness-design-long-running-apps	sprint contract
+claude-code-auto-mode	10,000
+claude-code-auto-mode	8.5%
+claude-code-auto-mode	5.7%
+managed-agents	wake(sessionId)
+managed-agents	getEvents()
+managed-agents	90%
+april-23-postmortem	April 7
+april-23-postmortem	25 words
+april-23-postmortem	100 words
+how-we-contain-claude	Seatbelt
+how-we-contain-claude	83%
+how-we-contain-claude	Cowork

@@ -64,6 +64,7 @@ def main():
     ap.add_argument("--source", choices=["live", "mirror"], default="live")
     ap.add_argument("--ca-bundle", default=os.environ.get("VERIFY_CA_BUNDLE"))
     ap.add_argument("--only", help="comma-separated slugs to check")
+    ap.add_argument("--report", default=REPORT, help="where to write the Markdown report (JSON goes alongside)")
     args = ap.parse_args()
 
     index, claims = load_index(), load_claims()
@@ -99,7 +100,7 @@ def main():
             failures += 1
         results.append(entry)
 
-    with open(REPORT, "w", encoding="utf-8") as f:
+    with open(args.report, "w", encoding="utf-8") as f:
         f.write(f"# Live verification report\n\nSource: {args.source}. Run date: {date.today().isoformat()}.\n\n")
         f.write("| # | Article | Status | Date found | Claims found | SHA-256 |\n|---|---------|--------|------------|--------------|---------|\n")
         for e in results:
@@ -117,8 +118,8 @@ def main():
                 f.write(f"- {e['slug']}: fetch failed: {e['error']}\n")
         if not any_missing:
             f.write("None.\n")
-    json.dump(results, open(os.path.join(HERE, "report.json"), "w"), indent=2)
-    print(open(REPORT).read())
+    json.dump(results, open(os.path.splitext(args.report)[0] + ".json", "w"), indent=2)
+    print(open(args.report, encoding="utf-8").read())
     sys.exit(1 if failures else 0)
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # Anthropic Engineering: Per-Article Research Notes
 
-Detailed notes for all 26 posts, grouped into the batches in which they were researched. Each note records the article's thesis, every concept and technique, every configuration and prompt quoted or reconstructed, every hyperlink, an implementation checklist, and dependencies on other posts. Verification markers inside the notes: confirmed online, partially confirmed, or "(from memory, unverified)".
+Detailed notes for all 26 posts, grouped into the batches in which they were researched. Each note records the article's thesis, every concept and technique, every configuration and prompt quoted or reconstructed, every hyperlink, an implementation checklist, and dependencies on other posts. Verification markers inside the notes: confirmed online, partially confirmed, or "(from memory, unverified)". Source labels: facts drawn from a linked cookbook, docs page, spec or repository rather than from the article body carry that source inline (for example `[docs]`, `[cookbook]`, `[mirror]`, "experiments PR #90", "MANIFEST.md"); an independent pass on 2026-09-21 found 173 of 192 numeric claims and configuration tokens verbatim on the live pages, 2 paraphrased, 14 sourced from those linked materials, and 2 live-page edits since publication, which are annotated where they occur (the byline and framework list in "Building effective agents").
 
 | # | Article | Notes file |
 |---|---------|------------|

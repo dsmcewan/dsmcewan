@@ -4,11 +4,7 @@ Companion to [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md). Every cookbook,
 
 ## Article text sources
 
-The live pages at https://www.anthropic.com/engineering could not be fetched from the authoring environment (blocked by its network policy), so article text was first taken from the unofficial public archives below and cross-checked against search-engine excerpts and the official cookbooks, docs and repos each post links to. A `--source live` run of `verification/verify_live.py` from an environment with access to the site then confirmed all 26 pages, their publication dates and 76 quoted figures and configuration strings against the live text (see `verification/report.md`). The archive links are kept as the reproducibility trail for environments that cannot reach the site; the script's claim list covers key figures, not every sentence, so quote-level fidelity of the notes rests on the archives plus that check.
-
-- https://github.com/ai-native-engineer/anthropic-mirror (directory `www.anthropic.com/engineering/`; 25 of the 26 posts, lacking the Agent SDK post)
-- https://github.com/thevibeworks/claude-code-docs (directory `content/blog/engineering/`; includes the Agent SDK post, which Anthropic also publishes at https://claude.com/blog/building-agents-with-the-claude-agent-sdk)
-- https://github.com/chyornyy/anthropic_engineering_md
+Article text was verified against the live pages at https://www.anthropic.com/engineering on 2026-09-21: `verification/verify_live.py --source live` confirmed all 26 pages, their publication dates and the quoted figures and configuration strings in `verification/claims.tsv` (see `verification/report.md`), and an independent pass over 192 numeric claims and configuration tokens in the notes found 173 verbatim, 2 paraphrased, 14 sourced from linked docs and cookbooks (labeled inline), and 2 post-publication edits to one page (annotated in the notes). Two pages now redirect: the best-practices post to https://code.claude.com/docs/en/best-practices and the Agent SDK post to https://claude.com/blog/building-agents-with-the-claude-agent-sdk. Offline fallbacks for the verification script are listed in `verification/README.md`.
 
 Additional official repos surfaced while researching the articles:
 
